@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    /* font-family: "Raleway", sans-serif; */
+}
+body{
+    font-size: 16px;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+}
+ul, ol, li, p{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    outline: none;
+}
+input,select{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+}
+.login-button{
+    background-color: #FA7335;
+    color: #fff;
+    height: 42px;
+    top: 8px;
+    border-radius: 4px;
+    border: 1px;
+    text-decoration: none;
+    padding: 9px 20px;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.dropdown-menu li a:hover{
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+}
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+}
+.navbar-toggler-icon{
+    border: 1px solid #FA7335;
+    border-radius: 5px;
+    padding: 15px;
+}
+.navbar-toggler:focus .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+.nav-link:hover, .nav-link:active{
+    color: #FA7335;
+}
+.section_banner{
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    background: url(../Images/banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 726px;
+    border-radius: 24px;
+}
+.section_banner .container{
+    position: relative;
+    height: 100%;
+}
+.section_banner .custom_banner_content{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.section_banner .custom_banner_content .travel_button{
+    background: #FEFA17;
+    padding: 13px 23px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    width: 230px;
+}
+.section_banner .custom_banner_content ul li h1{
+    font-family: "Raleway", sans-serif;
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 61px;
+}
+.section_banner .custom_banner_content .download_link{
+    display: flex;
+    padding-top: 64px;
+    gap: 8px;
+}
+.section_banner .custom_banner_content ul li{
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.section_banner .custom_banner_content ul li a img{
+    border: none;
+}
+/* responsiveness->banner */
+@media (max-width: 1024px) {
+    .section_banner{width: calc(100% - 50px);}
+    .section_banner .custom_banner_content{
+        left: 50%;
+        transform: translate(-50%, -50%);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .section_banner .custom_banner_content ul li h1{
+        font-size: 46px;
+    }
+    .section_banner .custom_banner_content ul li a img{height: 60px;}
+}
+@media (max-width: 767px) {
+    .login-button{
+        height: 35px;
+        padding: 9px 17px;
+        font-size: 14px;
+    }
+    .section_banner{width: calc(100% - 35px);}
+    .section_banner .custom_banner_content .travel_button{
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 767px) {
+    .section_banner{width: calc(100% - 25px);}
+    .section_banner .custom_banner_content ul li{font-size: 12px;}
+    .section_banner .custom_banner_content ul li h1{font-size: 32px;}
+    .section_banner .custom_banner_content .travel_button{
+        padding: 8px 17px;
+        font-size: 15px;
+    }
+}
+/* experience_world section */
+.experience_world .exp_content{
+    gap: 122px;
+    margin-top: 120px;
+}
+.experience_world .exp_content .exp_written_content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.experience_world .exp_content .exp_written_content .exp_box{
+    background-color: #DEF2F0;
+    width: 600px;
+    height: 143px;
+}
+.experience_world .exp_content .exp_written_content .plane_content{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.experience_world .exp_content .exp_written_content .discover-button{
+    background-color: #FA7335;
+    color: #fff;
+    height: 48px;
+    width: 170px;
+    top: 8px;
+    border-radius: 4px;
+    border: 1px;
+    text-decoration: none;
+    padding: 12px 30px;
+    justify-content: center;
+    font-size: 16px;
+    margin-top: 32px;
+}
+.experience_world .exp_content .exp_written_content p{
+    color: #FA7335; 
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    line-height: 24px;
+    font-weight: 500;
+}
+.experience_world .exp_content .exp_written_content ul li h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 57px;
+    color: #012E41;
+}
+.experience_world .exp_content .exp_written_content ul li p{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #345867;
+}
+.experience_world .exp_content .exp_written_content .plane_content div ul li{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+.experience_world .exp_content .exp_written_content .exp_box p{
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #012E41;
+    padding: 24px 92px 32px 52px;
+}
