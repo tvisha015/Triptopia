@@ -362,3 +362,132 @@ input,select{
         font-size: 16px;
     }
 }
+/* best places */
+.best_places{
+    margin-top: 120px;
+}
+.best_places .best_places_container{
+    background-color: #F6F6F6;
+    padding: 60px 48px 0px 60px;
+    text-align: center;
+    border-radius: 12px;
+}
+.best_places .best_places_container .orange_head p{
+    color: #FA7335;
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+.best_places .best_places_container h1{
+    color: #012E41;
+    font-size: 48px;
+    line-height: 57px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.best_places .best_places_container > .row:nth-child(3) p {
+    color: #345867;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+.best_places .best_places_photo_main_container{
+    padding: 0px 36px 36px 36px;
+    background-color: #F6F6F6;
+}
+.best_places .best_places_photo_main_container .best_img {
+    padding: 33px;
+    border: 1px solid #E7E7E7;
+    border-radius: 8px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 14px;
+}
+.best_places .best_places_photo_main_container .best_img h5{
+    color: #012E41;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+}
+.best_places .best_places_photo_main_container .best_img p{
+    color: #345867;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+/* best_places responsiveness */
+/* ---------- max-width: 1199px ---------- */
+@media (max-width: 1199px) {
+  .best_places .best_places_container h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+/* ---------- max-width: 1024px ---------- */
+@media (max-width: 1024px) {
+  .best_places .best_places_container h1 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+}
+
+/* ---------- max-width: 991px ---------- */
+@media (max-width: 991px) {
+  .best_places .best_places_container {
+    padding: 48px 32px 0;
+  }
+
+  .best_places .best_places_container h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+/* ---------- max-width: 767px ---------- */
+@media (max-width: 767px) {
+  .best_places .best_places_container {
+    padding: 40px 24px 0;
+  }
+
+  .best_places .best_places_container h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .best_places .best_places_container > .row:nth-child(3) p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .best_places .best_places_photo_main_container .best_img{
+    padding: 24px;
+  }
+}
+
+/* ---------- max-width: 575px ---------- */
+@media (max-width: 575px) {
+  .best_places {
+    margin-top: 80px;
+  }
+
+  .best_places .best_places_container h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .best_places .best_places_container > .row:nth-child(3) p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .best_places .best_places_photo_main_container .best_img{
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+  }
+}
