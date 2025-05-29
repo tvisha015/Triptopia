@@ -1144,6 +1144,24 @@ figure, .figure, .picture{
 .position-relative:hover .overlay-text {
   opacity: 1;
 }
+.dest_btn{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.dest_btn a{
+    border-radius: 4px;
+    border: 1px;
+    color: white;
+    background: rgba(1, 46, 65, 1);
+    padding: 9px 26px;
+    font-weight: 400;
+    font-family: 14px;
+    line-height: 24px;
+    vertical-align: middle;
+    text-align: center;
+    margin-bottom: 15px;
+}
 /* distination responsiveness */
 /* Max-width 1199px */
 @media (max-width: 1199px) {
@@ -1217,4 +1235,102 @@ figure, .figure, .picture{
     left: 12px;
   }
 }
+/* faq section */
+.faq{
+    padding-top: 120px;
+    background-color: #F6F6F6;
+}
+.faq_main{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 82px;
+}
+.faq_p{
+    color: #FA7335;
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    line-height: 24px;
+    font-weight: 500;
+    padding-bottom: 4px;
+}
+.faq_h1{
+    color: #012E41;
+    font-size: 48px;
+    line-height: 57px;
+    font-weight: 600;
+    max-width: 522px;
+    margin-bottom: 60px;
+    text-align: start;
+}
+/* .accordion { 
+    padding-left: 82px;
+} */
+.horizontal_line{
+    background-color: #26A59E;
+    width: 753px;
+    height: 4px;
+    top: 140px;
+}
+/* faq responsiveness */
+@media (max-width: 1400px){
+    .horizontal_line{
+        width: 570px;
+    }
+}
 
+@media (max-width: 1199px){
+    .faq{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .faq_main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .faq_h1{
+        margin: 0 auto;
+    }
+    .horizontal_line{
+        width: 100%;
+    }
+}
+@media (max-width: 991px){
+    .faq_h1{
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+    }
+}
+@media (max-width: 767px){
+    .faq_h1{
+        font-size: 28px;
+        line-height: 38px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+@media (max-width: 575px) {
+    .faq_h1 {
+        font-size: 24px;
+        line-height: 38px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+@media (max-width: 473px) {
+    .faq_img img{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .faq {
+        padding-top: 60px;
+    }
+    .faq_main {
+        margin-top: 5px;
+    }
+}
